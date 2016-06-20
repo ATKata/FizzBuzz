@@ -7,3 +7,19 @@ Feature: FizzBuzz
     Given the number 1
     When I play FizzBuzz
     Then I say "1"
+    
+   Scenario: a number divisible by 3
+   	Given the number 3
+   	When I play FizzBuzz
+   	Then I say "Fizz"
+   	
+   Scenario: a number divisible by 5
+   	Given the number 5
+   	When I play FizzBuzz
+   	Then I say "Buzz"
+   	
+   Scenario: a number divisible by 3 and 5
+   	Given the number 15
+   	When I play FizzBuzz
+   	Then I say "FizzBuzz"
+   	
